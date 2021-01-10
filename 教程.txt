@@ -1,0 +1,10 @@
+1. win + R 打开运行
+2. 输入cmd回车，打开命令行
+3. 输入python --version回车，弹出 python 3.9.x，证明安装成功
+4. 输入pip install pdfminer3k回车，等待下载，下载完成才进行下一步，完成后关闭命令行
+5. 把两个.py文件放进pdf同一个文件夹中，shift + 右键，选择在此处打开xxxx窗口
+6. 进入pdfminer的目录下（C:\Users\Bin\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\pdfminer\cmap），黏贴三个字体压缩包
+7. 在打开的命令行中，输入python filename，点击tab自动补全，然后回车执行
+8. 检查result.csv数据，检查完记得关闭
+9. 在命令行中输入python rename，点击tab自动补全，然后回车执行
+10. 收工！！！

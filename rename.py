@@ -6,14 +6,15 @@ import os
 def rename():
     with open('result.csv', encoding='utf-8') as f:
         fileList = os.listdir()
-
         reader = csv.reader(f)
-        header = next(reader)
-        # print(header)
+
         for row in reader:
-            if row[0] in fileList:
-                print(row)
-                os.rename(row[0], row[1]+row[2]+".pdf")
+            if row[0] in fileList:    
+                try:
+                    print(row)
+                    os.rename(row[0], row[1]+row[2]+".pdf")
+                except IOError as error:
+                    print("error = ", error)
 
 
 if __name__ == "__main__":
